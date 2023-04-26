@@ -122,11 +122,11 @@ const BLOG = {
       cover: 'http://p2.music.126.net/qGIzwzf05taTVfk9PSnSiw==/109951165424768428.jpg'
     },
     {
-      name: '王都グランセル',
-      artist: 'Falcom Sound Team jdk',
-      url: 'https://music.163.com/song/media/outer/url?id=731355.mp3',
-      cover: 'https://p1.music.126.net/kn6ugISTonvqJh3LHLaPtQ==/599233837187278.jpg'
-    }
+      name: '三号线',
+      artist: '刘大壮',
+      url: 'https://music.163.com/song/media/outer/url?id=1497799734.mp3',
+      cover: 'http://p2.music.126.net/bD3gBCziTittsNfRCI2WMA==/109951165493606999.jpg'
+    }.
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
   MUSIC_PLAYER_METING_SERVER: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING_SERVER || 'netease', // 音乐平台，[netease, tencent, kugou, xiami, baidu]
