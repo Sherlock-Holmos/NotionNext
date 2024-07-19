@@ -306,7 +306,7 @@ const BLOG = {
   MUSIC_PLAYER_CDN_URL:
     process.env.NEXT_PUBLIC_MUSIC_PLAYER_CDN_URL ||
     'https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js',
-  MUSIC_PLAYER_ORDER: process.env.NEXT_PUBLIC_MUSIC_PLAYER_ORDER || 'list', // 默认播放方式，顺序 list，随机 random
+  MUSIC_PLAYER_ORDER: process.env.NEXT_PUBLIC_MUSIC_PLAYER_ORDER || 'random', // 默认播放方式，顺序 list，随机 random
   MUSIC_PLAYER_AUDIO_LIST: [
     // 示例音乐列表。除了以下配置外，还可配置歌词，具体配置项看此文档 https://aplayer.js.org/#/zh-Hans/
     {
@@ -314,14 +314,14 @@ const BLOG = {
       artist: '薛之谦',
       url: 'https://m704.music.126.net/20240720021035/7355d42092a06e77e8892cd7a1a3868a/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/44585099853/847e/5152/0f10/7f171f69ab48b1e2cefe66f8f4df1621.m4a?authSecret=00000190cc19678514ac0a3b18d01fe9',
       cover:
-        'http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg'
+        'http://p2.music.126.net/rOG1a5E2VX2KknLbFGz9Jg==/109951169787102690.jpg?param=130y130'
     },
     {
-      name: '王都グランセル',
-      artist: 'Falcom Sound Team jdk',
-      url: 'https://music.163.com/song/media/outer/url?id=731355.mp3',
+      name: '我好像在哪里见过你',
+      artist: '薛之谦',
+      url: 'https://m804.music.126.net/20240720022318/df03dca17565bb1a7f7cd8eb6d9a698f/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/28481680292/9963/c4f2/0dfd/a8869bad29bc238e17ab876c45ba6b6c.m4a?authSecret=00000190cc250d1612400a3b194122b6',
       cover:
-        'https://p1.music.126.net/kn6ugISTonvqJh3LHLaPtQ==/599233837187278.jpg'
+        'http://p2.music.126.net/hti_a0LADoFMBHvOBwAtRA==/1369991500930171.jpg?param=130y130'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
