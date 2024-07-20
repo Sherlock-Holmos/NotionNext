@@ -312,14 +312,14 @@ const BLOG = {
     {
       name: '守村人',
       artist: '薛之谦',
-      url: 'https://m704.music.126.net/20240720021035/7355d42092a06e77e8892cd7a1a3868a/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/44585099853/847e/5152/0f10/7f171f69ab48b1e2cefe66f8f4df1621.m4a?authSecret=00000190cc19678514ac0a3b18d01fe9',
+      url: 'https://music.163.com/song/media/outer/url?id=2608471890.mp3',
       cover:
         'http://p2.music.126.net/rOG1a5E2VX2KknLbFGz9Jg==/109951169787102690.jpg?param=130y130'
     },
     {
       name: '我好像在哪里见过你',
       artist: '薛之谦',
-      url: 'https://m804.music.126.net/20240720022318/df03dca17565bb1a7f7cd8eb6d9a698f/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/28481680292/9963/c4f2/0dfd/a8869bad29bc238e17ab876c45ba6b6c.m4a?authSecret=00000190cc250d1612400a3b194122b6',
+      url: 'https://music.163.com/song/media/outer/url?id=417859631.mp3',
       cover:
         'http://p2.music.126.net/hti_a0LADoFMBHvOBwAtRA==/1369991500930171.jpg?param=130y130'
     }
