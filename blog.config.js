@@ -319,7 +319,7 @@ const BLOG = {
     {
       name: '我好像在哪里见过你',
       artist: '薛之谦',
-      url: 'https://m802.music.126.net/20240720115437/39a0fb5289a47442c43d985e36b101d2/jd-musicrep-ts/4095/1518/769f/b0cac1c33f5763f45b947f66d613a464.mp3',
+      url: 'https://rh-sycdn.kuwo.cn/fe3d63b085ae08fa93b8ca52e76c0824/669b1b87/resource/n1/67/18/3604884148.mp3?bitrate$128&from=vip',
       cover:
         'http://p2.music.126.net/hti_a0LADoFMBHvOBwAtRA==/1369991500930171.jpg?param=130y130'
     }
