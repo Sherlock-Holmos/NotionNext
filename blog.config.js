@@ -7,7 +7,7 @@ const BLOG = {
   PSEUDO_STATIC: process.env.NEXT_PUBLIC_PSEUDO_STATIC || false, // 伪静态路径，开启后所有文章URL都以 .html 结尾。
   NEXT_REVALIDATE_SECOND: process.env.NEXT_PUBLIC_REVALIDATE_SECOND || 5, // 更新内容缓存间隔 单位(秒)；即每个页面有5秒的纯静态期、此期间无论多少次访问都不会抓取notion数据；调大该值有助于节省Vercel资源、同时提升访问速率，但也会使文章更新有延迟。
   THEME: process.env.NEXT_PUBLIC_THEME || 'hexo', // 当前主题，在themes文件夹下可找到所有支持的主题；主题名称就是文件夹名，例如 example,fukasawa,gitbook,heo,hexo,landing,matery,medium,next,nobelium,plog,simple
-  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || true, // 是否显示切换主题按钮
+  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
   LANG: process.env.NEXT_PUBLIC_LANG || 'zh-CN', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
   SINCE: process.env.NEXT_PUBLIC_SINCE || 2021, // e.g if leave this empty, current year will be used.
   APPEARANCE: process.env.NEXT_PUBLIC_APPEARANCE || 'auto', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
@@ -129,7 +129,7 @@ const BLOG = {
     '/signup': 'LayoutSignUp'
   },
 
-  CAN_COPY: process.env.NEXT_PUBLIC_CAN_COPY || true, // 是否允许复制页面内容 默认允许，如果设置为false、则全栈禁止复制内容。
+  CAN_COPY: process.env.NEXT_PUBLIC_CAN_COPY || false, // 是否允许复制页面内容 默认允许，如果设置为false、则全栈禁止复制内容。
   // 自定义右键菜单
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU:
     process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU || true, // 自定义右键菜单，覆盖系统菜单
@@ -317,11 +317,18 @@ const BLOG = {
         'http://p2.music.126.net/rOG1a5E2VX2KknLbFGz9Jg==/109951169787102690.jpg?param=130y130'
     },
     {
-      name: '我好像在哪里见过你',
-      artist: '薛之谦',
-      url: 'https://rh-sycdn.kuwo.cn/fe3d63b085ae08fa93b8ca52e76c0824/669b1b87/resource/n1/67/18/3604884148.mp3?bitrate$128&from=vip',
+      name: '烟火里的尘埃',
+      artist: '华晨宇',
+      url: 'https://music.163.com/song/media/outer/url?id=29004400.mp3',
       cover:
-        'http://p2.music.126.net/hti_a0LADoFMBHvOBwAtRA==/1369991500930171.jpg?param=130y130'
+        'http://p2.music.126.net/_49Xz_x9kTTdEgmYYk6w2w==/6672936069046297.jpg?param=130y130'
+    },
+    {
+      name: 'Shape of You',
+      artist: 'Ed Sheeran',
+      url: 'https://down-load.lanrar.com/file/?AmRTbQ4/VGVVXAc/UWRcMFZpUGhSXgFrAGZaLAI7BCUJZlVkDXBVWFFoBiUFf10xUXtQZgR9AWUBb1owAjtRDwJrU2AOblQxVToHYFEyXG1WNVBkUjwBMQAhWjoCLQQ4CTpVNQ1kVTFRMQZmBWldelF7UCUEZgExATZabgJqUX8CMlMzDnxUMlUyB35RZFxpVjhQYVI1ATUAZFppAjgEMgltVWMNNVVkUT8GZQVmXThRaVA2BGkBZgFnWmgCblFjAjZTNA42VDRVYgc3UStcMFZ8UGZSKwF2AHRaOQIsBGwJbVU/DWFVNVE3BmMFZl1qUT9QcwQvAWoBa1o5AjhRbQIzUzMOYVQxVTYHY1E9XGhWP1BhUiMBLQAhWjoCMgRyCTRVMg12VXRRdwYnBWxdbVE8UGcEagE2ATRaawJuUWgCM1MiDiZUaVVzB2xRN1xvVj9Qe1I7ATYAKVptAmgEPQknVTMNY1UxUSkGdgU1XTNRfFA7BAQBYAFtWmECbg==',
+      cover:
+        'http://p1.music.126.net/ZAbThPRnV0wVu2er0PIlvA==/109951168805157389.jpg?param=130y130'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
